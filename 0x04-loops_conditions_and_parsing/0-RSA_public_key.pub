@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# SSH RSA Key Pair Public Key
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDNWNxzF7wPPQZ5cIkGlpvwo9Mo9Zet4TNEsKjJ0xJ/J 7kodes@7kodesDevOps
+
