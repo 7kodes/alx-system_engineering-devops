@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Uisng for loop, this Bash script displays:
+
+# The content of the current directory
+# In a list format
+# Where only the part of the name after the first dash is displayed
+
+for file in *;
+do
+	# Skip if it's not a regular file or directory
+	if [[ ! "$file" =~ ^\..* ]]
+	then
+		# Extract the part after the first dash
+		echo "${file#*~}"
+	fi
+done
+
