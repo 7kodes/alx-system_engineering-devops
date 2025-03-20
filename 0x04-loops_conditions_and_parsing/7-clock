@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# Using the while loop; this Bash script 
+# displays the time for 12 hours and 59 minutes:
+
+# display hours from 0 to 12
+# display minutes from 1 to 59
+
+min=1
+
+while [[ $min -le 720 ]];
+do
+	if (( min == 60 ))
+	then
+		echo "Hour: 1"
+	elif (( min == 120 ))
+	then
+		echo "Hour: 2"
+	elif (( min == 180 ))
+	then
+		echo "Hour: 3"
+	elif (( min == 240 ))
+	then
+		echo "Hour: 4"
+	elif (( min == 300 ))
+	then
+		echo "Hour: 5"
+	elif (( min == 360 ))
+	then
+		echo "Hour: 6"
+	elif (( min == 420 ))
+	then
+		echo "Hour: 7"
+	elif (( min == 480 ))
+	then
+		echo "Hour: 8"
+	elif (( min == 540 ))
+	then
+		echo "Hour: 9"
+	elif (( min == 600 ))
+	then
+		echo "Hour: 10"
+	elif (( min == 660 ))
+	then
+		echo "Hour: 11"
+	elif (( min == 720 ))
+	then
+		echo "Hour: 12"
+	else
+		echo "$min"
+	fi
+
+	min=$(( min + 1 ))
+done
+
