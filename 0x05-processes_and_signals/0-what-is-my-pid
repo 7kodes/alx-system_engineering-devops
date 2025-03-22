@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# This Bash script displays it own process identification (PID)
+
+echo $$
