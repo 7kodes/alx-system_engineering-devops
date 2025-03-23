@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# This Bash script stops 4-to_infinity_and_beyond process without the use
+# of 'kill' or 'killall' commands
+
+pkill -SIGUSR1 -f "4-to_infinity_and_beyond_new"
+
+
+

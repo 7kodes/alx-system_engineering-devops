@@ -2,8 +2,8 @@
 # This Bash script displays 'To infinity and beyond' indefinitely.
 # In between each iteration of the loop, sleep 2 is added
 
-# Save PID to a file
-echo $$ > /tmp/4_to_infinity_pid 
+# Using the SIGUSR1 kill signal
+trap SIGUSR1
 
 while true
 do
