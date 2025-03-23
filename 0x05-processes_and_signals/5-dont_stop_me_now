@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This Bash script stops 4-to_infinity_and_beyond process using 'kill'.
+
+# Read the stored file
+pid=$( cat /tmp/4_to_infinity_pid )
+
+# Kill the process using the PID
+kill "$pid"
