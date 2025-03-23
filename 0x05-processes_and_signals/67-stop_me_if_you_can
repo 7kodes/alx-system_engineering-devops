@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# This Bash script prints to the screen of 7-highlander
+# upon invoking SIGTERM
+
+# Read PID from file
+if [[ -f /tmp/7_highlander_pid ]]
+then
+	pid=$(cat /tmp/7_highlander_pid )
+	if [[ -n "$pid" ]]
+	then
+		kill -SIGTERM "$pid"
+	fi
+fi

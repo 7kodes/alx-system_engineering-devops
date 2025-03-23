@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# This Bash script displays:
+
+# 'To infinity and beyond' indefinitely
+# With a sleep 2 in between each iteration
+# 'I am invincible!!!' when receiving a SIGTERM signal
+
+# Store PID for easier targeting
+echo $$ > /tmp/7_highlander_pid
+
+# Prints message on SIGTERM
+trap 'echo "I am invisible!!!"' SIGTERM
+
+for (( ; ; ))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
