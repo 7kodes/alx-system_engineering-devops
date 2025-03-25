@@ -1,18 +1,14 @@
 #!/usr/bin/env ruby
+# This regexp matches the following words:
+# hbttn
+# hbttttn
+# hbttttn
+# hbtttttn
 
 # Get the first argument
 input = ARGV[0]
 
-# Regex: Matches a word followed by an optional second word (zero or more occurences
-# after a space) 
-# \w+ matches one or more word characters, \s* matches optional whitespace.
-# \w* matches zero or more word characters
-matches = input.scan(/\w+\s*w*/).join
+matches = input.scan(/hbtt{1,4}n/).join
 
 # Print the concatenated matches
 print matches
-
-# RUN:
-#  ./1-repetition_token_0.rb "School, good enough!" | cat -e
-#  OUTPUTS:
-#  Schoolgood enough
